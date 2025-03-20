@@ -11,6 +11,7 @@ fsspec==2025.3.0
 huggingface-hub==0.29.3
 humanfriendly==10.0
 idna==3.10
+joblib==1.4.2
 kiwisolver==1.4.8
 loguru==0.7.3
 matplotlib==3.10.1
@@ -28,9 +29,12 @@ python-dateutil==2.9.0.post0
 pytz==2025.1
 PyYAML==6.0.2
 requests==2.32.3
+scikit-learn==1.6.1
+scipy==1.15.2
 seaborn==0.13.2
 six==1.17.0
 sympy==1.13.3
+threadpoolctl==3.6.0
 tokenizers==0.21.1
 tqdm==4.67.1
 typing_extensions==4.12.2

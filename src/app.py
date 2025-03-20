@@ -13,12 +13,22 @@ def main():
     # Get the themes file and load it
     parent_dir = os.path.dirname(current_dir)
     themes_filepath = os.path.join(parent_dir, config.get('themes_path'))
-    
+
     themes = utils.load_raw_themes(themes_filepath)
+    
+    # load theme embeddings and cluster
+    embeddings = np.load(os.path.join(parent_dir, config.get('embedding_file')))
+    clusters = utils.cluster_embeddings(embeddings, n_clusters=config.get('n_clusters'))
 
-    print(themes)
+    # view clusters
+    words_buckets, _ = utils.bucket_clusters(
+        embeddings, 
+        themes,
+        clusters
+    )
 
+    print(words_buckets)
 
-
+    
 if __name__ == '__main__':
     main()
