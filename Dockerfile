@@ -1,12 +1,11 @@
-FROM python:3.11-alpine
+FROM python:3.10
+
+WORKDIR /app/src
 
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-WORKDIR /app/src
-
 COPY . .
 
-CMD ["python", "app.py"]
-
+CMD ["python", "src/app.py"]
