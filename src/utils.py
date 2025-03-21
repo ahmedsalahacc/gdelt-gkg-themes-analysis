@@ -119,7 +119,7 @@ def bucket_clusters(
 def find_nearest(
     query_embedding: np.ndarray,
     reference_embeddings: np.ndarray,
-    batch_size: Optional[int] = None,
+    batch_size: Optional[int] = 10000,
     top_k: int = 10,
 ) -> np.ndarray:
     """Find the top k similar embeddings to a query embedding.
