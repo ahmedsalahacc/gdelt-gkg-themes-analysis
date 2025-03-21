@@ -1,6 +1,8 @@
 themes_path: data/cache/LOOKUP-GKGTHEMES.TXT
 embedding_file: data/cache/GKGThemeEmbeddings.npy
 embedding_model_name: BAAI/bge-large-en-v1.5
+words_bucket_file: data/cache/words_bucket.json
+embedding_bucket_file: data/cache/embedding_bucket.json
 
 # clustering
 n_clusters: 5
