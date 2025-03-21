@@ -1,6 +1,6 @@
-# Supply Chain Disruptions Analysis
+# GDELT GKG Themes Analysis
 
-A Python application for analyzing supply chain disruptions using GDELT GKG themes through embedding and clustering.
+A Python application for analyzing GDELT GKG themes through embedding and clustering.
 
 ## Features
 
@@ -12,8 +12,8 @@ A Python application for analyzing supply chain disruptions using GDELT GKG them
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/ahmedsalahacc/supplychain_disruptions.git
-cd supplychain_disruptions
+git clone https://github.com/ahmedsalahacc/gdelt-gkg-themes-analysis.git
+cd gdelt-gkg-themes-analysis
 ```
 
 2. Install dependencies:
@@ -68,6 +68,6 @@ Edit `config.yml` to modify:
 Build and run using Docker:
 
 ```sh
-docker build -t supplychain_disruptions .
-docker run -it supplychain_disruptions
+docker build -t gdelt_GKGtheme_analysis .
+docker run -it gdelt_GKGtheme_analysis
 ```
