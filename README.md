@@ -12,7 +12,7 @@ A Python application for analyzing supply chain disruptions using GDELT GKG them
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/yourusername/supplychain_disruptions.git
+git clone https://github.com/ahmedsalahacc/supplychain_disruptions.git
 cd supplychain_disruptions
 ```
 
