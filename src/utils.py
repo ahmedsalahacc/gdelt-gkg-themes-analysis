@@ -121,7 +121,7 @@ def find_nearest(
     reference_embeddings: np.ndarray,
     batch_size: Optional[int] = 10000,
     top_k: int = 10,
-) -> np.ndarray:
+) -> Tuple[np.ndarray, np.ndarray]:
     """Find the top k similar embeddings to a query embedding.
 
     Args:
@@ -151,5 +151,5 @@ def find_nearest(
 
     # Argsort the results
     argsort = np.argsort(results)[::-1]
-    print(results.shape)
+
     return argsort[:top_k], results[argsort[:top_k]]
